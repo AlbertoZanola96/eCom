@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(54, 54, 54);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  margin: 0 10px 0 10px;
+  list-style: none;
+}
+
+header ul li a {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+

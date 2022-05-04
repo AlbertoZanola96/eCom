@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/prodotti', function () {
+    $array_prodotti = config('prodotti');
+    $data = [
+        'prodotti' => $array_prodotti
+    ];
+    return view('prodotti', $data);
+});
+
+Route::get('/magazzino', function () {
+    return view('magazzino');
 });
