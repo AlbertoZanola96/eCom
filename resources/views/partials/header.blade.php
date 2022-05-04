@@ -1,6 +1,9 @@
 <header>
     <ul>
         <li>
+            <a href="/"><img src="{{ asset('immagini/logo.png') }}" alt=""></a>
+        </li>
+        <li>
             <a href="/">Home</a>
         </li>
         <li>

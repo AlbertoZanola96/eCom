@@ -1,11 +1,11 @@
 .home {
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 82px);
 
     img {
         position: absolute;
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 82px);
         opacity: 0.4;
         object-fit: cover;
         filter: blur(2px);
@@ -22,11 +22,16 @@
 
         h1 {
             font-size: 65px;
+            color: rgb(54, 54, 54);
+            text-decoration: underline 5px;
+            text-decoration-color: #FF7F27;
         }
 
         h3 {
             font-size: 40px;
-
+            color: rgb(54, 54, 54);
+            text-decoration: underline 4px;
+            text-decoration-color: #FF7F27;
         }
     }
     

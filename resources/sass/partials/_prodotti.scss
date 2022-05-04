@@ -1,0 +1,18 @@
+.prod {
+    width: 100%;
+    height: calc(100vh - 82px);
+    
+
+    .prod-opacity {
+        background-image: url('../immagini/sfondo.jpg');
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: #ffffff;
+        opacity: 0.1;
+        position: absolute;
+    }
+
+    h3 {
+        z-index: 999;
+    }
+}
