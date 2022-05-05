@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('homepage');
 
 Route::get('/prodotti', function () {
     $array_prodotti = config('prodotti');
@@ -23,8 +23,17 @@ Route::get('/prodotti', function () {
         'prodotti' => $array_prodotti
     ];
     return view('prodotti', $data);
-});
+})->name('lista-prodotti');
+
+Route::get('/dettaglio-prodotto/{id}', function ($id) {
+    $array_prodotti = config('prodotti');
+    $data = [
+        'prodotti' => $array_prodotti[$id]
+    ];
+    return view('dettaglio', $data);
+})->name('dettaglio-singolo-prodotto');
+
 
 Route::get('/magazzino', function () {
     return view('magazzino');
-});
+})->name('lista-magazzino');

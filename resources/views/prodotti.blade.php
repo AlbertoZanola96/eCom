@@ -3,20 +3,19 @@
 @section('title', 'Prodotti')
 
 @section('content')
-    <div class="prod">
-        
-        <div class="prod-opacity"></div>
-        <ul>
-            @foreach ($prodotti as $prodotto)
+    <div class="sfondo"></div>
+    @foreach ($prodotti as $index => $prodotto)
+        <div class="prod">
+            <ul>
                 <li>
+                    <img src="{{ $prodotto['logo'] }}" alt="">
                     <h3>{{ $prodotto['nomeProdotto'] }}</h3> 
-                    <h5>{{ $prodotto['codiceProdotto'] }}</h5>
-                    <p>{{ $prodotto['descrizione'] }}</p>
-                    <p>{{ $prodotto['prezzo'] }}</p>
-                    <br/>
+                    <a href="{{ route('dettaglio-singolo-prodotto', ['id' => $index]) }}">
+                        <button>Dettagli</button>
+                    </a>    
                 </li>
-            @endforeach
-        </ul>
-    </div>
+            </ul>
+        </div>
+    @endforeach
 @endsection
 
